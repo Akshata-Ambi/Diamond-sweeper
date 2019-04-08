@@ -10,78 +10,398 @@
   </head>
   <body>
     <main>
-        <h1 class="header text-center">Diamond Sweeper</h1>    
-    
-        <section class="result-container text-center" id="template">
-            <h3 class="score" id="score" ></h3>
-        </section>
-        
-        <section class="game-container" id="game-container">
-            <div class="tiles" id="tiles-1"></div>
-            <div class="tiles" id="tiles-2"></div>
-            <div class="tiles" id="tiles-3"></div>
-            <div class="tiles" id="tiles-4"></div>
-            <div class="tiles" id="tiles-5"></div>
-            <div class="tiles" id="tiles-6"></div>
-            <div class="tiles" id="tiles-7"></div>
-            <div class="tiles" id="tiles-8"></div>
-            <div class="tiles" id="tiles-9"></div>
-            <div class="tiles" id="tiles-10"></div>
-            <div class="tiles" id="tiles-11"></div>
-            <div class="tiles" id="tiles-12"></div>
-            <div class="tiles" id="tiles-13"></div>
-            <div class="tiles" id="tiles-15"></div>
-            <div class="tiles" id="tiles-14"></div>
-            <div class="tiles" id="tiles-16"></div>
-            <div class="tiles" id="tiles-17"></div>
-            <div class="tiles" id="tiles-18"></div>
-            <div class="tiles" id="tiles-19"></div>
-            <div class="tiles" id="tiles-20"></div>
-            <div class="tiles" id="tiles-21"></div>
-            <div class="tiles" id="tiles-22"></div>
-            <div class="tiles" id="tiles-23"></div>
-            <div class="tiles" id="tiles-24"></div>
-            <div class="tiles" id="tiles-25"></div>
-            <div class="tiles" id="tiles-26"></div>
-            <div class="tiles" id="tiles-27"></div>
-            <div class="tiles" id="tiles-28"></div>
-            <div class="tiles" id="tiles-29"></div>
-            <div class="tiles" id="tiles-30"></div>
-            <div class="tiles" id="tiles-31"></div>
-            <div class="tiles" id="tiles-32"></div>
-            <div class="tiles" id="tiles-33"></div>
-            <div class="tiles" id="tiles-34"></div>
-            <div class="tiles" id="tiles-35"></div>
-            <div class="tiles" id="tiles-36"></div>
-            <div class="tiles" id="tiles-37"></div>
-            <div class="tiles" id="tiles-38"></div>
-            <div class="tiles" id="tiles-39"></div>
-            <div class="tiles" id="tiles-40"></div>
-            <div class="tiles" id="tiles-41"></div>
-            <div class="tiles" id="tiles-42"></div>
-            <div class="tiles" id="tiles-43"></div>
-            <div class="tiles" id="tiles-44"></div>
-            <div class="tiles" id="tiles-45"></div>
-            <div class="tiles" id="tiles-46"></div>
-            <div class="tiles" id="tiles-47"></div>
-            <div class="tiles" id="tiles-48"></div>
-            <div class="tiles" id="tiles-49"></div>
-            <div class="tiles" id="tiles-50"></div>
-            <div class="tiles" id="tiles-51"></div>
-            <div class="tiles" id="tiles-52"></div>
-            <div class="tiles" id="tiles-53"></div>
-            <div class="tiles" id="tiles-54"></div>
-            <div class="tiles" id="tiles-55"></div>
-            <div class="tiles" id="tiles-56"></div>
-            <div class="tiles" id="tiles-57"></div>
-            <div class="tiles" id="tiles-58"></div>
-            <div class="tiles" id="tiles-59"></div>
-            <div class="tiles" id="tiles-60"></div>
-            <div class="tiles" id="tiles-61"></div>
-            <div class="tiles" id="tiles-62"></div>
-            <div class="tiles" id="tiles-63"></div>
-            <div class="tiles" id="tiles-64"></div>
-        </section>    
+      <h1 class="header text-center">Diamond Sweeper</h1>
+
+      <section class="result-container text-center" id="template">
+        <h3 class="score" id="score"></h3>
+      </section>
+
+      <section class="game-container" id="game-container">
+        <div class="tiles-container">
+          <div class="flipper">
+            <div class="front" id="tiles-1"></div>
+            <div class="back"></div>
+          </div>
+        </div>
+        <div class="tiles-container">
+          <div class="flipper">
+            <div class="front" id="tiles-2"></div>
+            <div class="back"></div>
+          </div>
+        </div>
+        <div class="tiles-container">
+          <div class="flipper">
+            <div class="front" id="tiles-3"></div>
+            <div class="back"></div>
+          </div>
+        </div>
+        <div class="tiles-container">
+          <div class="flipper">
+            <div class="front" id="tiles-4"></div>
+            <div class="back"></div>
+          </div>
+        </div>
+        <div class="tiles-container">
+          <div class="flipper">
+            <div class="front" id="tiles-5"></div>
+            <div class="back"></div>
+          </div>
+        </div>
+        <div class="tiles-container">
+          <div class="flipper">
+            <div class="front" id="tiles-6"></div>
+            <div class="back"></div>
+          </div>
+        </div>
+        <div class="tiles-container">
+          <div class="flipper">
+            <div class="front" id="tiles-7"></div>
+            <div class="back"></div>
+          </div>
+        </div>
+        <div class="tiles-container">
+          <div class="flipper">
+            <div class="front" id="tiles-8"></div>
+            <div class="back"></div>
+          </div>
+        </div>
+        <div class="tiles-container">
+          <div class="flipper">
+            <div class="front" id="tiles-9"></div>
+            <div class="back"></div>
+          </div>
+        </div>
+        <div class="tiles-container">
+          <div class="flipper">
+            <div class="front" id="tiles-10"></div>
+            <div class="back"></div>
+          </div>
+        </div>
+        <div class="tiles-container">
+          <div class="flipper">
+            <div class="front" id="tiles-11"></div>
+            <div class="back"></div>
+          </div>
+        </div>
+        <div class="tiles-container">
+          <div class="flipper">
+            <div class="front" id="tiles-12"></div>
+            <div class="back"></div>
+          </div>
+        </div>
+        <div class="tiles-container">
+          <div class="flipper">
+            <div class="front" id="tiles-13"></div>
+            <div class="back"></div>
+          </div>
+        </div>
+        <div class="tiles-container">
+          <div class="flipper">
+            <div class="front" id="tiles-14"></div>
+            <div class="back"></div>
+          </div>
+        </div>
+        <div class="tiles-container">
+          <div class="flipper">
+            <div class="front" id="tiles-15"></div>
+            <div class="back"></div>
+          </div>
+        </div>
+        <div class="tiles-container">
+          <div class="flipper">
+            <div class="front" id="tiles-16"></div>
+            <div class="back"></div>
+          </div>
+        </div>
+        <div class="tiles-container">
+          <div class="flipper">
+            <div class="front" id="tiles-17"></div>
+            <div class="back"></div>
+          </div>
+        </div>
+        <div class="tiles-container">
+          <div class="flipper">
+            <div class="front" id="tiles-18"></div>
+            <div class="back"></div>
+          </div>
+        </div>
+        <div class="tiles-container">
+          <div class="flipper">
+            <div class="front" id="tiles-19"></div>
+            <div class="back"></div>
+          </div>
+        </div>
+        <div class="tiles-container">
+          <div class="flipper">
+            <div class="front" id="tiles-20"></div>
+            <div class="back"></div>
+          </div>
+        </div>
+        <div class="tiles-container">
+          <div class="flipper">
+            <div class="front" id="tiles-21"></div>
+            <div class="back"></div>
+          </div>
+        </div>
+        <div class="tiles-container">
+          <div class="flipper">
+            <div class="front" id="tiles-22"></div>
+            <div class="back"></div>
+          </div>
+        </div>
+        <div class="tiles-container">
+          <div class="flipper">
+            <div class="front" id="tiles-23"></div>
+            <div class="back"></div>
+          </div>
+        </div>
+        <div class="tiles-container">
+          <div class="flipper">
+            <div class="front" id="tiles-24"></div>
+            <div class="back"></div>
+          </div>
+        </div>
+        <div class="tiles-container">
+          <div class="flipper">
+            <div class="front" id="tiles-25"></div>
+            <div class="back"></div>
+          </div>
+        </div>
+        <div class="tiles-container">
+          <div class="flipper">
+            <div class="front" id="tiles-26"></div>
+            <div class="back"></div>
+          </div>
+        </div>
+        <div class="tiles-container">
+          <div class="flipper">
+            <div class="front" id="tiles-27"></div>
+            <div class="back"></div>
+          </div>
+        </div>
+        <div class="tiles-container">
+          <div class="flipper">
+            <div class="front" id="tiles-28"></div>
+            <div class="back"></div>
+          </div>
+        </div>
+        <div class="tiles-container">
+          <div class="flipper">
+            <div class="front" id="tiles-29"></div>
+            <div class="back"></div>
+          </div>
+        </div>
+        <div class="tiles-container">
+          <div class="flipper">
+            <div class="front" id="tiles-30"></div>
+            <div class="back"></div>
+          </div>
+        </div>
+        <div class="tiles-container">
+          <div class="flipper">
+            <div class="front" id="tiles-31"></div>
+            <div class="back"></div>
+          </div>
+        </div>
+        <div class="tiles-container">
+          <div class="flipper">
+            <div class="front" id="tiles-32"></div>
+            <div class="back"></div>
+          </div>
+        </div>
+        <div class="tiles-container">
+          <div class="flipper">
+            <div class="front" id="tiles-33"></div>
+            <div class="back"></div>
+          </div>
+        </div>
+        <div class="tiles-container">
+          <div class="flipper">
+            <div class="front" id="tiles-34"></div>
+            <div class="back"></div>
+          </div>
+        </div>
+        <div class="tiles-container">
+          <div class="flipper">
+            <div class="front" id="tiles-35"></div>
+            <div class="back"></div>
+          </div>
+        </div>
+        <div class="tiles-container">
+          <div class="flipper">
+            <div class="front" id="tiles-36"></div>
+            <div class="back"></div>
+          </div>
+        </div>
+        <div class="tiles-container">
+          <div class="flipper">
+            <div class="front" id="tiles-37"></div>
+            <div class="back"></div>
+          </div>
+        </div>
+        <div class="tiles-container">
+          <div class="flipper">
+            <div class="front" id="tiles-38"></div>
+            <div class="back"></div>
+          </div>
+        </div>
+        <div class="tiles-container">
+          <div class="flipper">
+            <div class="front" id="tiles-39"></div>
+            <div class="back"></div>
+          </div>
+        </div>
+        <div class="tiles-container">
+          <div class="flipper">
+            <div class="front" id="tiles-40"></div>
+            <div class="back"></div>
+          </div>
+        </div>
+        <div class="tiles-container">
+          <div class="flipper">
+            <div class="front" id="tiles-41"></div>
+            <div class="back"></div>
+          </div>
+        </div>
+        <div class="tiles-container">
+          <div class="flipper">
+            <div class="front" id="tiles-42"></div>
+            <div class="back"></div>
+          </div>
+        </div>
+        <div class="tiles-container">
+          <div class="flipper">
+            <div class="front" id="tiles-43"></div>
+            <div class="back"></div>
+          </div>
+        </div>
+        <div class="tiles-container">
+          <div class="flipper">
+            <div class="front" id="tiles-44"></div>
+            <div class="back"></div>
+          </div>
+        </div>
+        <div class="tiles-container">
+          <div class="flipper">
+            <div class="front" id="tiles-45"></div>
+            <div class="back"></div>
+          </div>
+        </div>
+        <div class="tiles-container">
+          <div class="flipper">
+            <div class="front" id="tiles-46"></div>
+            <div class="back"></div>
+          </div>
+        </div>
+        <div class="tiles-container">
+          <div class="flipper">
+            <div class="front" id="tiles-47"></div>
+            <div class="back"></div>
+          </div>
+        </div>
+        <div class="tiles-container">
+          <div class="flipper">
+            <div class="front" id="tiles-48"></div>
+            <div class="back"></div>
+          </div>
+        </div>
+        <div class="tiles-container">
+          <div class="flipper">
+            <div class="front" id="tiles-49"></div>
+            <div class="back"></div>
+          </div>
+        </div>
+        <div class="tiles-container">
+          <div class="flipper">
+            <div class="front" id="tiles-50"></div>
+            <div class="back"></div>
+          </div>
+        </div>
+        <div class="tiles-container">
+          <div class="flipper">
+            <div class="front" id="tiles-51"></div>
+            <div class="back"></div>
+          </div>
+        </div>
+        <div class="tiles-container">
+          <div class="flipper">
+            <div class="front" id="tiles-52"></div>
+            <div class="back"></div>
+          </div>
+        </div>
+        <div class="tiles-container">
+          <div class="flipper">
+            <div class="front" id="tiles-53"></div>
+            <div class="back"></div>
+          </div>
+        </div>
+        <div class="tiles-container">
+          <div class="flipper">
+            <div class="front" id="tiles-54"></div>
+            <div class="back"></div>
+          </div>
+        </div>
+        <div class="tiles-container">
+          <div class="flipper">
+            <div class="front" id="tiles-55"></div>
+            <div class="back"></div>
+          </div>
+        </div>
+        <div class="tiles-container">
+          <div class="flipper">
+            <div class="front" id="tiles-56"></div>
+            <div class="back"></div>
+          </div>
+        </div>
+        <div class="tiles-container">
+          <div class="flipper">
+            <div class="front" id="tiles-57"></div>
+            <div class="back"></div>
+          </div>
+        </div>
+        <div class="tiles-container">
+          <div class="flipper">
+            <div class="front" id="tiles-58"></div>
+            <div class="back"></div>
+          </div>
+        </div>
+        <div class="tiles-container">
+          <div class="flipper">
+            <div class="front" id="tiles-59"></div>
+            <div class="back"></div>
+          </div>
+        </div>
+        <div class="tiles-container">
+          <div class="flipper">
+            <div class="front" id="tiles-60"></div>
+            <div class="back"></div>
+          </div>
+        </div>
+        <div class="tiles-container">
+          <div class="flipper">
+            <div class="front" id="tiles-61"></div>
+            <div class="back"></div>
+          </div>
+        </div>
+        <div class="tiles-container">
+          <div class="flipper">
+            <div class="front" id="tiles-62"></div>
+            <div class="back"></div>
+          </div>
+        </div>
+        <div class="tiles-container">
+          <div class="flipper">
+            <div class="front" id="tiles-63"></div>
+            <div class="back"></div>
+          </div>
+        </div>
+        <div class="tiles-container">
+          <div class="flipper">
+            <div class="front" id="tiles-64"></div>
+            <div class="back"></div>
+          </div>
+        </div>
+      </section>
     </main>
   </body>
 </html>
