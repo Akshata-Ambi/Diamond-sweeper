@@ -4,7 +4,8 @@
   "description": "Diamond sweeper game",
   "main": "index.js",
   "scripts": {
-    "start": "node ./server.js",
+    "build": "rimraf dist && webpack --mode development",
+    "start": "node ./dist/server.js",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -22,5 +23,16 @@
   "homepage": "https://github.com/Akshata-Ambi/Diamond-sweeper#readme",
   "dependencies": {
     "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.3",
+    "@babel/preset-env": "^7.4.3",
+    "babel-loader": "^8.0.5",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "rimraf": "^2.6.3",
+    "webpack": "^4.29.6",
+    "webpack-cli": "^3.3.0",
+    "webpack-node-externals": "^1.7.2"
   }
 }
