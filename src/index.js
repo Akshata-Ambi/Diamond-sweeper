@@ -7,7 +7,7 @@ import './css/style.css';
 const init = () => {
   // This line will generate 8 random positions of the diamond
   const randomPositions = randomDiamondPositionGenerator();
-  
+
   //counting number of boxes left
   let boxesLeft = 64;
   let diamondsLeft = 8;
@@ -25,12 +25,13 @@ const init = () => {
   const gameContainer = document.querySelector('#game-container');
 
   const onClick = e => {
-    //Decreasing the number of boxes for each click
-    boxesLeft--;
 
     //This checks make sure that the box is only clickable once as 
     //initially div with front class will be visible
     if (e.target.className === 'front') {
+
+      //Decreasing the number of boxes for each click
+      boxesLeft--;
 
       //Here we are checking if the id of the clicked div
       //exists in our random position array
