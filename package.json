@@ -1,0 +1,26 @@
+{
+  "name": "diamond-sweeper-game",
+  "version": "1.0.0",
+  "description": "Diamond sweeper game",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./server.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Akshata-Ambi/Diamond-sweeper.git"
+  },
+  "keywords": [
+    "Diamond-Sweeper",
+    "Game"
+  ],
+  "author": "Akshata Ambi",
+  "bugs": {
+    "url": "https://github.com/Akshata-Ambi/Diamond-sweeper/issues"
+  },
+  "homepage": "https://github.com/Akshata-Ambi/Diamond-sweeper#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}
