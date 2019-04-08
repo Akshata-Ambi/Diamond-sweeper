@@ -1,8 +1,8 @@
-import logMessage from './js';
+import randomDiamondPositionGenerator from './js/randomPositionGenerator';
 import './css/style.css';
 
 // Log message to console
-logMessage('Welcome to Diamond Sweeper!');
+console.log(randomDiamondPositionGenerator());
 
 // Needed for Hot Module Replacement
 if(typeof(module.hot) !== 'undefined') {
